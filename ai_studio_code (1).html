@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>টিএমএসএস পলিটেকনিক ইনস্টিটিউট, নাটোর (TPI)</title>
+  <meta name="description" content="টিএমএসএস পলিটেকনিক ইনস্টিটিউট, নাটোর — ৪ বছর মেয়াদি ডিপ্লোমা ইন ইঞ্জিনিয়ারিং ও শর্ট কোর্স ভর্তি তথ্য পোর্টাল। প্রতিষ্ঠিত ২০১২।" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f1f5f9;
+      --surface: #ffffff;
+      --surface-soft: #eff6ff;
+      --surface-form: #f8fafc;
+      --border: #e2e8f0;
+      --border-blue: #bfdbfe;
+      --border-strong: #cbd5e1;
+      --text: #0f172a;
+      --heading: #0f294a;
+      --text-secondary: #475569;
+      --muted: #64748b;
+      --brand: #1e40af;
+      --brand-hover: #1e3a8a;
+      --brand-fg: #ffffff;
+      --accent-text: #1e40af;
+      --kicker: #b45309;
+      --whatsapp-text: #15803d;
+      --notice-bg: #fffbeb;
+      --notice-border: #fde68a;
+      --notice-text: #78350f;
+      --footer-bg: #0f294a;
+      --footer-border: #1e3a8a;
+      --err-bg: #fef2f2;
+      --err-border: #fecaca;
+      --err-text: #991b1b;
+      --ok-bg: #ecfdf5;
+      --ok-border: #a7f3d0;
+      --ok-text: #064e3b;
+    }
+
+    html.dark {
+      --bg: #020617;
+      --surface: #0f172a;
+      --surface-soft: rgba(15, 23, 42, 0.7);
+      --surface-form: rgba(15, 23, 42, 0.7);
+      --border: #1e293b;
+      --border-blue: #1e293b;
+      --border-strong: #334155;
+      --text: #f1f5f9;
+      --heading: #ffffff;
+      --text-secondary: #cbd5e1;
+      --muted: #94a3b8;
+      --brand: #d97706;
+      --brand-hover: #f59e0b;
+      --brand-fg: #020617;
+      --accent-text: #fbbf24;
+      --kicker: #fbbf24;
+      --whatsapp-text: #34d399;
+      --notice-bg: #0f172a;
+      --notice-border: #1e293b;
+      --notice-text: #cbd5e1;
+      --footer-bg: #020617;
+      --footer-border: #1e293b;
+      --err-bg: rgba(69, 10, 10, 0.45);
+      --err-border: rgba(127, 29, 29, 0.7);
+      --err-text: #fecaca;
+      --ok-bg: rgba(6, 78, 59, 0.4);
+      --ok-border: rgba(6, 95, 70, 0.7);
+      --ok-text: #a7f3d0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+      font-family: "Noto Sans Bengali", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    button, input, select { font: inherit; }
+    .font-display { font-family: "Plus Jakarta Sans", "Noto Sans Bengali", system-ui, sans-serif; }
+    .tabular-nums { font-variant-numeric: tabular-nums; }
+    .container { max-width: 1280px; margin: 0 auto; padding-left: 16px; padding-right: 16px; }
+    @media (min-width: 640px) { .container { padding-left: 24px; padding-right: 24px; } }
+    @media (min-width: 1024px) { .container { padding-left: 32px; padding-right: 32px; } }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      border-top: 3px solid var(--brand);
+      border-bottom: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+    }
+    html.dark .site-header { background: rgba(2, 6, 23, 0.95); }
+    .header-inner {
+      display: flex;
+      height: 64px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--heading);
+      font-weight: 700;
+      font-size: 1rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    @media (min-width: 640px) { .brand { font-size: 1.125rem; } }
+    .brand img {
+      width: 36px;
+      height: 36px;
+      border-radius: 9999px;
+      object-fit: cover;
+      border: 1px solid var(--border-blue);
+      background: #fff;
+    }
+    .nav-desktop { display: none; align-items: center; gap: 24px; }
+    .nav-desktop a {
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      text-underline-offset: 4px;
+    }
+    .nav-desktop a:hover { color: var(--accent-text); text-decoration: underline; }
+    @media (min-width: 768px) { .nav-desktop { display: flex; } }
+
+    .header-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--brand);
+      color: var(--brand-fg);
+      border: 0;
+      border-radius: 6px;
+      padding: 10px 18px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
+      transition: background-color 0.15s ease;
+    }
+    .btn-primary:hover { background: var(--brand-hover); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--surface);
+      color: var(--accent-text);
+      border: 1px solid var(--border-blue);
+      border-radius: 6px;
+      padding: 10px 18px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.15s ease;
+    }
+    .btn-outline:hover { background: var(--surface-soft); }
+    html.dark .btn-outline { color: var(--text); border-color: var(--border-strong); }
+    .header-cta { display: none; }
+    @media (min-width: 640px) { .header-cta { display: inline-flex; } }
+
+    .menu-btn {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+    }
+    @media (min-width: 768px) { .menu-btn { display: none; } }
+    .nav-mobile {
+      display: none;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 12px 16px 16px;
+    }
+    .nav-mobile.open { display: block; }
+    .nav-mobile a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+    .nav-mobile a:hover { background: var(--surface-soft); color: var(--text); }
+    .nav-mobile .mobile-cta {
+      margin-top: 8px;
+      text-align: center;
+      background: var(--brand);
+      color: var(--brand-fg);
+      font-weight: 600;
+    }
+
+    .hero-surface {
+      background: linear-gradient(to bottom, #eff6ff, #ffffff 55%);
+      border-bottom: 1px solid var(--border);
+    }
+    html.dark .hero-surface { background: #020617; }
+    .section-band {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-wrap { padding-top: 40px; padding-bottom: 40px; }
+    @media (min-width: 1024px) { .hero-wrap { padding-top: 64px; padding-bottom: 64px; } }
+    .hero-grid { display: grid; gap: 32px; align-items: stretch; }
+    @media (min-width: 1024px) { .hero-grid { grid-template-columns: repeat(12, 1fr); gap: 48px; } }
+    .hero-left { display: flex; flex-direction: column; justify-content: space-between; }
+    @media (min-width: 1024px) { .hero-left { grid-column: span 6; } .hero-right { grid-column: span 6; } }
+    .kicker { font-size: 0.8rem; font-weight: 600; color: var(--kicker); letter-spacing: 0.02em; }
+    @media (min-width: 640px) { .kicker { font-size: 0.875rem; } }
+    .hero-title {
+      margin-top: 14px;
+      font-size: 1.875rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--heading);
+      text-wrap: balance;
+    }
+    @media (min-width: 640px) { .hero-title { font-size: 2.25rem; } }
+    @media (min-width: 1024px) { .hero-title { font-size: 2.75rem; line-height: 1.18; } }
+    .hero-sub {
+      margin-top: 18px;
+      max-width: 560px;
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+    @media (min-width: 640px) { .hero-sub { font-size: 1.125rem; } }
+    .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+    }
+    .hero-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--whatsapp-text);
+      text-decoration: none;
+    }
+    .hero-phone:hover { opacity: 0.85; }
+
+    .campus-figure {
+      position: relative;
+      height: 100%;
+      min-height: 280px;
+      overflow: hidden;
+      border-radius: 8px;
+      border: 1px solid var(--border-blue);
+      background: var(--surface-soft);
+      box-shadow: 0 2px 6px rgba(15, 41, 74, 0.08);
+    }
+    @media (min-width: 640px) { .campus-figure { min-height: 340px; } }
+    .campus-figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    @media (min-width: 1024px) {
+      .campus-figure img { position: absolute; inset: 0; }
+    }
+    .campus-scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 41, 74, 0.85), rgba(15, 41, 74, 0.2) 55%, transparent);
+      pointer-events: none;
+    }
+    .campus-caption {
+      position: absolute;
+      inset: auto 0 0 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px;
+      color: #fff;
+    }
+    .campus-caption small { display: block; font-size: 0.75rem; font-weight: 500; color: #fcd34d; }
+    .campus-caption strong { font-size: 0.95rem; font-weight: 600; }
+
+    .facts-grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-radius: 8px;
+      border: 1px solid var(--border-blue);
+      background: var(--surface-soft);
+      overflow: hidden;
+    }
+    .fact-item { padding: 16px 20px; border-bottom: 1px solid var(--border-blue); }
+    .fact-item:nth-child(odd) { border-right: 1px solid var(--border-blue); }
+    .fact-item:nth-last-child(-n+2) { border-bottom: 0; }
+    @media (min-width: 640px) {
+      .facts-grid { grid-template-columns: repeat(4, 1fr); }
+      .fact-item { border-bottom: 0; border-right: 1px solid var(--border-blue); }
+      .fact-item:last-child { border-right: 0; }
+    }
+    .fact-item dt { font-size: 0.75rem; font-weight: 500; color: var(--text-secondary); }
+    .fact-item dd {
+      margin-top: 4px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent-text);
+    }
+    @media (min-width: 640px) { .fact-item dd { font-size: 1.5rem; } }
+
+    .sec-pad { padding-top: 56px; padding-bottom: 56px; }
+    @media (min-width: 1024px) { .sec-pad { padding-top: 80px; padding-bottom: 80px; } }
+    .sec-head {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+    }
+    @media (min-width: 640px) { .sec-head { flex-direction: row; align-items: flex-end; } }
+    .sec-kicker { font-size: 0.75rem; font-weight: 600; color: var(--kicker); }
+    .sec-title { margin-top: 4px; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--heading); }
+    @media (min-width: 640px) { .sec-title { font-size: 1.875rem; } }
+    .sec-meta { font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); }
+
+    .dept-grid { margin-top: 32px; display: grid; gap: 20px; }
+    @media (min-width: 640px) { .dept-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .dept-grid { grid-template-columns: repeat(3, 1fr); } }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .dept-card:hover { border-color: var(--accent-text); box-shadow: 0 6px 16px rgba(30, 64, 175, 0.08); }
+    .dept-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .icon-box {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      border: 1px solid var(--border-blue);
+      background: var(--surface-soft);
+      color: var(--accent-text);
+    }
+    .dept-code { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; color: var(--muted); }
+    .dept-dur { margin-top: 20px; font-size: 0.75rem; font-weight: 500; color: var(--kicker); }
+    .dept-name { margin-top: 4px; font-size: 1.125rem; font-weight: 600; color: var(--heading); }
+    .dept-focus { margin-top: 8px; font-size: 0.875rem; color: var(--text-secondary); }
+    .dept-foot { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border); }
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: none;
+      border: 0;
+      padding: 0;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--accent-text);
+      cursor: pointer;
+    }
+    .link-btn:hover { opacity: 0.8; }
+
+    .adm-grid { display: grid; gap: 40px; }
+    @media (min-width: 1024px) {
+      .adm-grid { grid-template-columns: repeat(12, 1fr); gap: 48px; }
+      .adm-left { grid-column: span 5; }
+      .adm-right { grid-column: span 7; }
+    }
+    .mini-facts {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-radius: 8px;
+      border: 1px solid var(--border-blue);
+      background: var(--surface-soft);
+    }
+    .mini-facts > div { padding: 14px 16px; border-right: 1px solid var(--border-blue); }
+    .mini-facts > div:last-child { border-right: 0; }
+    .mini-facts dt { font-size: 0.75rem; color: var(--text-secondary); }
+    .mini-facts dd { margin-top: 4px; font-size: 1rem; font-weight: 700; color: var(--heading); }
+    .steps-list {
+      margin-top: 16px;
+      list-style: none;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .steps-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+    .steps-list li:last-child { border-bottom: 0; }
+    .step-num { font-size: 0.75rem; font-weight: 700; color: var(--accent-text); margin-top: 2px; }
+    .notice-box {
+      margin-top: 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--notice-border);
+      background: var(--notice-bg);
+      font-size: 0.875rem;
+      color: var(--notice-text);
+    }
+    .form-panel {
+      border-radius: 8px;
+      border: 1px solid var(--border-blue);
+      background: var(--surface-form);
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    }
+    @media (min-width: 640px) { .form-panel { padding: 32px; } }
+    .form-head { border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+    .form-head h3 { font-size: 1.25rem; font-weight: 700; color: var(--heading); }
+    .form-head p { margin-top: 4px; font-size: 0.875rem; color: var(--muted); }
+    .form-body { margin-top: 24px; display: grid; gap: 20px; }
+    .form-row { display: grid; gap: 20px; }
+    @media (min-width: 640px) { .form-row { grid-template-columns: repeat(2, 1fr); } }
+    .field label { display: block; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); }
+    .field input, .field select {
+      margin-top: 6px;
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid var(--border-strong);
+      background: var(--surface);
+      padding: 10px 14px;
+      font-size: 0.875rem;
+      color: var(--text);
+    }
+    .field input:focus, .field select:focus {
+      outline: 2px solid var(--accent-text);
+      outline-offset: 0;
+    }
+    .form-actions { display: flex; flex-direction: column; gap: 12px; padding-top: 4px; }
+    @media (min-width: 640px) { .form-actions { flex-direction: row; } .form-actions > button { flex: 1; } }
+    .feedback { min-height: 24px; }
+    .alert-box {
+      border-radius: 6px;
+      padding: 14px;
+      font-size: 0.875rem;
+      border: 1px solid transparent;
+    }
+    .alert-box.error { background: var(--err-bg); border-color: var(--err-border); color: var(--err-text); }
+    .alert-box.success { background: var(--ok-bg); border-color: var(--ok-border); color: var(--ok-text); }
+    .alert-box a { display: inline-block; margin-top: 6px; font-size: 0.78rem; font-weight: 600; }
+
+    .courses-grid { margin-top: 32px; display: grid; gap: 24px; }
+    @media (min-width: 768px) { .courses-grid { grid-template-columns: repeat(3, 1fr); } }
+    .course-card { border-top: 2px solid var(--brand); }
+    .course-meta { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--muted); }
+    .course-meta span:first-child { font-weight: 600; color: var(--accent-text); }
+    .course-title { margin-top: 12px; font-size: 1.125rem; font-weight: 600; color: var(--heading); }
+    .course-desc { margin-top: 10px; font-size: 0.875rem; color: var(--text-secondary); }
+
+    .founder-grid { display: grid; gap: 32px; align-items: center; }
+    @media (min-width: 768px) {
+      .founder-grid { grid-template-columns: repeat(12, 1fr); gap: 48px; }
+      .founder-img-col { grid-column: span 3; }
+      .founder-bio-col { grid-column: span 9; }
+    }
+    .founder-frame {
+      width: 176px;
+      height: 176px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-blue);
+      background: var(--surface-soft);
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+    }
+    @media (min-width: 640px) { .founder-frame { width: 208px; height: 208px; } }
+    .founder-frame img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+    .founder-role { margin-top: 4px; font-size: 0.875rem; font-weight: 600; color: var(--accent-text); }
+    .founder-bio {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      max-width: 680px;
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+
+    .contact-grid { margin-top: 32px; display: grid; gap: 20px; }
+    @media (min-width: 768px) { .contact-grid { grid-template-columns: repeat(3, 1fr); } }
+    .contact-label { display: flex; align-items: center; gap: 10px; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); }
+    .contact-val {
+      margin-top: 12px;
+      display: block;
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--accent-text);
+      text-decoration: none;
+      word-break: break-word;
+    }
+    .contact-val:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+    .site-footer { border-top: 1px solid var(--footer-border); background: var(--footer-bg); color: #e2e8f0; }
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    @media (min-width: 640px) {
+      .footer-inner { flex-direction: row; align-items: center; justify-content: space-between; }
+    }
+    .footer-left, .footer-right { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+    .footer-logo { width: 32px; height: 32px; border-radius: 9999px; object-fit: cover; border: 1px solid rgba(255, 255, 255, 0.25); background: #fff; }
+    .dev-avatar { width: 32px; height: 32px; border-radius: 9999px; object-fit: cover; border: 1px solid rgba(251, 191, 36, 0.7); }
+    .theme-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      padding: 6px 12px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .theme-btn:hover { background: rgba(255, 255, 255, 0.2); }
+
+    .wa-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 20;
+      width: 48px;
+      height: 48px;
+      border-radius: 9999px;
+      background: #16a34a;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+      transition: transform 0.15s ease, background-color 0.15s ease;
+    }
+    .wa-float:hover { transform: scale(1.05); background: #15803d; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <img src="./images/tpi-logo.jpg" alt="TPI লোগো" />
+        <span>টিএমএসএস পলিটেকনিক ইনস্টিটিউট</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="প্রধান নেভিগেশন">
+        <a href="#departments">বিভাগ</a>
+        <a href="#admission">ভর্তি</a>
+        <a href="#courses">শর্ট কোর্স</a>
+        <a href="#founder">প্রতিষ্ঠাতা</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#admission" class="btn-primary header-cta">ভর্তি বুকিং</a>
+        <button type="button" id="menu-toggle" class="menu-btn" aria-expanded="false" aria-label="নেভিগেশন মেনু খুলুন">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-menu" class="nav-mobile" aria-label="মোবাইল নেভিগেশন">
+      <a href="#departments">বিভাগ</a>
+      <a href="#admission">ভর্তি</a>
+      <a href="#courses">শর্ট কোর্স</a>
+      <a href="#founder">প্রতিষ্ঠাতা</a>
+      <a href="#contact">যোগাযোগ</a>
+      <a href="#admission" class="mobile-cta">ভর্তি বুকিং</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="top" class="hero-surface">
+      <div class="container hero-wrap">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div>
+              <p class="kicker">প্রতিষ্ঠিত ২০১২ &nbsp;·&nbsp; নাটোর ক্যাম্পাস</p>
+              <h1 class="hero-title">টিএমএসএস পলিটেকনিক ইনস্টিটিউট, নাটোর</h1>
+              <p class="hero-sub">এসএসসি পাসের পর ৪ বছর মেয়াদি ডিপ্লোমা ইন ইঞ্জিনিয়ারিং। দক্ষতা অর্জন করুন, ভবিষ্যৎ গড়ুন।</p>
+            </div>
+            <div class="hero-actions">
+              <a href="#admission" class="btn-primary">ভর্তি বুকিং করুন →</a>
+              <a href="#departments" class="btn-outline">বিভাগসমূহ দেখুন</a>
+              <a href="https://wa.me/8801767478523" target="_blank" rel="noopener noreferrer" class="hero-phone tabular-nums">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>01767478523</span>
+              </a>
+            </div>
+          </div>
+
+          <div id="campus" class="hero-right">
+            <figure class="campus-figure">
+              <img src="./images/campus.jpg" alt="টিএমএসএস পলিটেকনিক ইনস্টিটিউট, নাটোর — একাডেমিক ভবন" />
+              <div class="campus-scrim"></div>
+              <figcaption class="campus-caption">
+                <div>
+                  <small>আমাদের ক্যাম্পাস</small>
+                  <strong>টিএমএসএস পলিটেকনিক ইনস্টিটিউট, নাটোর</strong>
+                </div>
+                <span class="font-display tabular-nums" style="font-size:12px;color:#dbeafe;">TPI · EST. 2012</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <dl class="facts-grid">
+          <div class="fact-item"><dt>প্রতিষ্ঠিত</dt><dd class="tabular-nums">২০১২</dd></div>
+          <div class="fact-item"><dt>ন্যূনতম যোগ্যতা</dt><dd>এসএসসি</dd></div>
+          <div class="fact-item"><dt>ন্যূনতম জিপিএ</dt><dd class="tabular-nums">২.৫০</dd></div>
+          <div class="fact-item"><dt>কোর্সের মেয়াদ</dt><dd class="tabular-nums">৪ বছর</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="departments" class="container sec-pad">
+      <div class="sec-head">
+        <div>
+          <p class="sec-kicker">ডিপ্লোমা ইন ইঞ্জিনিয়ারিং প্রোগ্রাম</p>
+          <h2 class="sec-title">আমাদের বিভাগসমূহ</h2>
+        </div>
+        <p class="sec-meta tabular-nums">৬টি বিভাগ · ৪ বছর মেয়াদি ডিপ্লোমা</p>
+      </div>
+
+      <div class="dept-grid">
+        <article class="card dept-card">
+          <div>
+            <div class="dept-top">
+              <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg></div>
+              <span class="font-display dept-code tabular-nums">01 / CST</span>
+            </div>
+            <p class="dept-dur">৪ বছর মেয়াদি ডিপ্লোমা</p>
+            <h3 class="font-display dept-name">Computer Engineering</h3>
+            <p class="font-display dept-focus">Programming, Networking, Database &amp; AI</p>
+          </div>
+          <div class="dept-foot">
+            <button type="button" class="link-btn" onclick="selectDepartment('Computer Engineering')">ভর্তি বুকিং করুন ↗</button>
+          </div>
+        </article>
+
+        <article class="card dept-card">
+          <div>
+            <div class="dept-top">
+              <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+              <span class="font-display dept-code tabular-nums">02 / ET</span>
+            </div>
+            <p class="dept-dur">৪ বছর মেয়াদি ডিপ্লোমা</p>
+            <h3 class="font-display dept-name">Electrical Engineering</h3>
+            <p class="font-display dept-focus">Power System, Automation &amp; Industrial Electrical</p>
+          </div>
+          <div class="dept-foot">
+            <button type="button" class="link-btn" onclick="selectDepartment('Electrical Engineering')">ভর্তি বুকিং করুন ↗</button>
+          </div>
+        </article>
+
+        <article class="card dept-card">
+          <div>
+            <div class="dept-top">
+              <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+              <span class="font-display dept-code tabular-nums">03 / MT</span>
+            </div>
+            <p class="dept-dur">৪ বছর মেয়াদি ডিপ্লোমা</p>
+            <h3 class="font-display dept-name">Mechanical Engineering</h3>
+            <p class="font-display dept-focus">Manufacturing, CAD &amp; Workshop Technology</p>
+          </div>
+          <div class="dept-foot">
+            <button type="button" class="link-btn" onclick="selectDepartment('Mechanical Engineering')">ভর্তি বুকিং করুন ↗</button>
+          </div>
+        </article>
+
+        <article class="card dept-card">
+          <div>
+            <div class="dept-top">
+              <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></svg></div>
+              <span class="font-display dept-code tabular-nums">04 / CT</span>
+            </div>
+            <p class="dept-dur">৪ বছর মেয়াদি ডিপ্লোমা</p>
+            <h3 class="font-display dept-name">Civil Engineering</h3>
+            <p class="font-display dept-focus">Surveying, Construction &amp; Structural Design</p>
+          </div>
+          <div class="dept-foot">
+            <button type="button" class="link-btn" onclick="selectDepartment('Civil Engineering')">ভর্তি বুকিং করুন ↗</button>
+          </div>
+        </article>
+
+        <article class="card dept-card">
+          <div>
+            <div class="dept-top">
+              <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+              <span class="font-display dept-code tabular-nums">05 / TT</span>
+            </div>
+            <p class="dept-dur">৪ বছর মেয়াদি ডিপ্লোমা</p>
+            <h3 class="font-display dept-name">Textile Engineering</h3>
+            <p class="font-display dept-focus">Garments, Fabric &amp; Quality Control</p>
+          </div>
+          <div class="dept-foot">
+            <button type="button" class="link-btn" onclick="selectDepartment('Textile Engineering')">ভর্তি বুকিং করুন ↗</button>
+          </div>
+        </article>
+
+        <article class="card dept-card">
+          <div>
+            <div class="dept-top">
+              <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+              <span class="font-display dept-code tabular-nums">06 / GDPM</span>
+            </div>
+            <p class="dept-dur">৪ বছর মেয়াদি ডিপ্লোমা</p>
+            <h3 class="font-display dept-name">GDPM Engineering</h3>
+            <p class="font-display dept-focus">Graphic Design, Printing &amp; Multimedia</p>
+          </div>
+          <div class="dept-foot">
+            <button type="button" class="link-btn" onclick="selectDepartment('GDPM Engineering')">ভর্তি বুকিং করুন ↗</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="admission" class="section-band">
+      <div class="container sec-pad">
+        <div class="adm-grid">
+          <div class="adm-left">
+            <p class="sec-kicker">এসএসসি পাসের পর ভর্তির সুযোগ</p>
+            <h2 class="sec-title">ভর্তি তথ্য ও প্রক্রিয়া</h2>
+
+            <dl class="mini-facts">
+              <div><dt>যোগ্যতা</dt><dd>এসএসসি</dd></div>
+              <div><dt>ন্যূনতম জিপিএ</dt><dd class="tabular-nums" style="color:var(--accent-text)">২.৫০</dd></div>
+              <div><dt>মেয়াদ</dt><dd class="tabular-nums">৪ বছর</dd></div>
+            </dl>
+
+            <h3 style="margin-top:32px;font-size:1rem;font-weight:600;color:var(--heading);">ভর্তির ধাপসমূহ</h3>
+            <ol class="steps-list">
+              <li><span class="font-display step-num tabular-nums">01.</span><span>পছন্দের বিভাগ বেছে নিন।</span></li>
+              <li><span class="font-display step-num tabular-nums">02.</span><span>নিচের ফর্ম পূরণ করে প্রাথমিক বুকিং পাঠান।</span></li>
+              <li><span class="font-display step-num tabular-nums">03.</span><span>কলেজ থেকে যোগাযোগ করে আপনাকে আসার সময় জানানো হবে।</span></li>
+              <li><span class="font-display step-num tabular-nums">04.</span><span>প্রয়োজনীয় কাগজপত্রসহ সরাসরি কলেজে এসে সব তথ্য জেনে চূড়ান্ত ভর্তির আবেদন করুন।</span></li>
+            </ol>
+
+            <div class="notice-box">
+              <span>ℹ</span>
+              <p>এটি শুধু প্রাথমিক বুকিং। চূড়ান্ত ভর্তি কলেজে এসে আবেদনের মাধ্যমে সম্পন্ন হয়।</p>
+            </div>
+          </div>
+
+          <div class="adm-right">
+            <div class="form-panel">
+              <div class="form-head">
+                <h3>ভর্তি বুকিং করুন</h3>
+                <p>নিচের তথ্যগুলো পূরণ করে সরাসরি হোয়াটসঅ্যাপ অথবা ইমেইলে প্রাথমিক বুকিং পাঠান।</p>
+              </div>
+
+              <form id="booking-form" class="form-body" novalidate>
+                <div class="form-row">
+                  <div class="field">
+                    <label for="booking-name">আপনার নাম</label>
+                    <input id="booking-name" type="text" required placeholder="পূর্ণ নাম লিখুন" />
+                  </div>
+                  <div class="field">
+                    <label for="booking-phone">মোবাইল নম্বর</label>
+                    <input id="booking-phone" type="tel" required class="tabular-nums" placeholder="01XXXXXXXXX" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="field">
+                    <label for="booking-gpa">এসএসসি জিপিএ</label>
+                    <input id="booking-gpa" type="number" step="0.01" min="0" max="5" required class="tabular-nums" placeholder="যেমন: 4.50" />
+                  </div>
+                  <div class="field">
+                    <label for="booking-department">পছন্দের বিভাগ</label>
+                    <select id="booking-department">
+                      <option value="Computer Engineering">Computer Engineering</option>
+                      <option value="Electrical Engineering">Electrical Engineering</option>
+                      <option value="Mechanical Engineering">Mechanical Engineering</option>
+                      <option value="Civil Engineering">Civil Engineering</option>
+                      <option value="Textile Engineering">Textile Engineering</option>
+                      <option value="GDPM Engineering">GDPM Engineering</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn-primary">হোয়াটসঅ্যাপে বুকিং পাঠান</button>
+                  <button type="button" id="email-booking-btn" class="btn-outline">ইমেইলে বুকিং পাঠান</button>
+                </div>
+
+                <div id="booking-feedback" class="feedback" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="container sec-pad">
+      <div class="sec-head">
+        <div>
+          <p class="sec-kicker">স্বল্পমেয়াদি প্রশিক্ষণ কর্মসূচি</p>
+          <h2 class="sec-title">শর্ট কোর্সসমূহ</h2>
+        </div>
+        <p class="sec-meta">দক্ষতা উন্নয়ন ও কর্মমুখী কারিগরি প্রশিক্ষণ</p>
+      </div>
+
+      <div class="courses-grid">
+        <article class="card course-card">
+          <div class="course-meta"><span>NSDA অনুমোদিত</span><span class="font-display tabular-nums">01</span></div>
+          <h3 class="course-title">NSDA এর অধীনে</h3>
+          <p class="course-desc">BTEB এবং/অথবা NSDA অনুমোদিত ভোকেশনাল স্কিলস ডেভেলপমেন্ট প্রশিক্ষণ প্রকল্প ও কর্মসূচি।</p>
+        </article>
+        <article class="card course-card">
+          <div class="course-meta"><span>BTEB অনুমোদিত</span><span class="font-display tabular-nums">02</span></div>
+          <h3 class="course-title">BTEB এর অধীনে</h3>
+          <p class="course-desc">টিএমএসএস প্রশিক্ষণ ও শিক্ষা খাতের অধীনে পরিচালিত কলেজ ও শিক্ষাপ্রতিষ্ঠানসমূহে কারিগরি প্রশিক্ষণ কর্মসূচি।</p>
+        </article>
+        <article class="card course-card">
+          <div class="course-meta"><span>উদ্যোক্তা উন্নয়ন</span><span class="font-display tabular-nums">03</span></div>
+          <h3 class="course-title">প্রকল্পের অধীনে</h3>
+          <p class="course-desc">উদ্যোক্তা ও ব্যবসা ব্যবস্থাপনা উন্নয়ন প্রশিক্ষণ কর্মসূচির অধীনে দক্ষতা বৃদ্ধি প্রশিক্ষণ।</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="founder" class="section-band">
+      <div class="container sec-pad">
+        <div class="founder-grid">
+          <div class="founder-img-col">
+            <div class="founder-frame">
+              <img src="./images/founder.jpg" alt="প্রফেসর ডা. হোসনে আরা বেগম" />
+            </div>
+          </div>
+          <div class="founder-bio-col">
+            <p class="sec-kicker">আমাদের প্রতিষ্ঠাতা · অ্যাশোকা ফেলো (১৯৮৯) · বেগম রোকেয়া পদক (২০০৭)</p>
+            <h2 class="sec-title" style="margin-top:8px;">প্রফেসর ডা. হোসনে আরা বেগম</h2>
+            <p class="founder-role">প্রতিষ্ঠাতা ও নির্বাহী পরিচালক, টিএমএসএস</p>
+            <p class="founder-bio">১৯৬৪ সালে বগুড়ার থেঙ্গামারা গ্রামে গড়ে ওঠা সংগঠনটিকে তিনি ১৯৮০ সালে নতুনভাবে গড়ে তোলেন এবং নারীর উন্নয়নের লক্ষ্যে এর নাম হয় থেঙ্গামারা মহিলা সবুজ সংঘ (টিএমএসএস)। তিনি অ্যাশোকা ফেলো (১৯৮৯) এবং ২০০৭ সালে বেগম রোকেয়া পদকে সম্মানিত হয়েছেন। তাঁর নেতৃত্বে টিএমএসএস শিক্ষা, স্বাস্থ্য ও ক্ষুদ্রঋণসহ বহু খাতে কাজ করছে এবং টিপিআই এই শিক্ষা উদ্যোগেরই অংশ।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container sec-pad">
+      <div class="sec-head">
+        <div>
+          <p class="sec-kicker">সরাসরি তথ্য ও পরামর্শের জন্য</p>
+          <h2 class="sec-title">যোগাযোগ</h2>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card">
+          <div class="contact-label"><span>হোয়াটসঅ্যাপ ও ফোন</span></div>
+          <a href="https://wa.me/8801767478523" target="_blank" rel="noopener noreferrer" class="contact-val tabular-nums">01767478523</a>
+        </div>
+        <div class="card">
+          <div class="contact-label"><span>ইমেইল</span></div>
+          <a href="mailto:mdayon451@gmail.com" class="font-display contact-val">mdayon451@gmail.com</a>
+        </div>
+        <div class="card">
+          <div class="contact-label"><span>ঠিকানা</span></div>
+          <p class="contact-val" style="color:var(--heading);">টিএমএসএস পলিটেকনিক ইনস্টিটিউট, নাটোর</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="./images/tpi-logo.jpg" alt="TPI লোগো" class="footer-logo" />
+        <p style="font-size:0.875rem;color:#e2e8f0;">© ২০২৬ টিএমএসএস পলিটেকনিক ইনস্টিটিউট, নাটোর</p>
+      </div>
+      <div class="footer-right">
+        <button type="button" id="theme-toggle" class="theme-btn">ডার্ক মোড</button>
+        <div style="display:flex;align-items:center;gap:10px;font-size:0.875rem;color:#e2e8f0;">
+          <img src="./images/developer.jpg" alt="ডেভেলপার" class="dev-avatar" />
+          <span>Developed by <strong class="font-display" style="color:#ffffff;">Md. Ayon</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/8801767478523" target="_blank" rel="noopener noreferrer" aria-label="হোয়াটসঅ্যাপে মেসেজ করুন" class="wa-float">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+  </a>
+
+  <script>
+    const MIN_GPA = 2.5;
+    const WA_NUMBER = "8801767478523";
+    const EMAIL_TO = "mdayon451@gmail.com";
+
+    const menuBtn = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      const open = mobileMenu.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(open));
+    });
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    const themeToggle = document.getElementById("theme-toggle");
+    function applyTheme(dark) {
+      document.documentElement.classList.toggle("dark", dark);
+      localStorage.setItem("tpi-theme", dark ? "dark" : "light");
+      themeToggle.textContent = dark ? "লাইট মোড" : "ডার্ক মোড";
+    }
+    const savedTheme = localStorage.getItem("tpi-theme");
+    const initialDark = savedTheme ? savedTheme === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    applyTheme(initialDark);
+    themeToggle.addEventListener("click", () => {
+      applyTheme(!document.documentElement.classList.contains("dark"));
+    });
+
+    window.selectDepartment = function (dept) {
+      document.getElementById("booking-department").value = dept;
+      document.getElementById("booking-feedback").innerHTML = "";
+      document.getElementById("admission").scrollIntoView({ behavior: "smooth" });
+    };
+
+    function validateBooking() {
+      const name = document.getElementById("booking-name").value.trim();
+      const phone = document.getElementById("booking-phone").value.trim();
+      const gpaRaw = document.getElementById("booking-gpa").value;
+      const department = document.getElementById("booking-department").value;
+
+      if (!name) return { valid: false, error: "অনুগ্রহ করে আপনার নাম লিখুন।" };
+      if (!phone || phone.length < 6) return { valid: false, error: "অনুগ্রহ করে একটি সঠিক মোবাইল নম্বর দিন।" };
+      const gpa = parseFloat(gpaRaw);
+      if (Number.isNaN(gpa) || gpa < 0 || gpa > 5) return { valid: false, error: "অনুগ্রহ করে ০.০০ থেকে ৫.০০ এর মধ্যে সঠিক জিপিএ লিখুন।" };
+      if (gpa < MIN_GPA) return { valid: false, error: "দুঃখিত, ভর্তির জন্য ন্যূনতম জিপিএ ২.৫০ প্রয়োজন।" };
+      return { valid: true, name, phone, gpa, department };
+    }
+
+    function showFeedback(type, message, linkHref, linkLabel, newTab) {
+      const box = document.getElementById("booking-feedback");
+      const linkHtml = linkHref
+        ? `<br><a href="${linkHref}" ${newTab ? 'target="_blank" rel="noopener noreferrer"' : ""}>${linkLabel}</a>`
+        : "";
+      box.innerHTML = `<div role="${type === "error" ? "alert" : "status"}" class="alert-box ${type}"><strong>${message}</strong>${linkHtml}</div>`;
+    }
+
+    document.getElementById("booking-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const res = validateBooking();
+      if (!res.valid) return showFeedback("error", res.error);
+      const text = "ভর্তি বুকিং%0Aনাম: " + encodeURIComponent(res.name) + "%0Aমোবাইল: " + encodeURIComponent(res.phone) + "%0Aজিপিএ: " + res.gpa + "%0Aবিভাগ: " + encodeURIComponent(res.department);
+      const waUrl = `https://wa.me/${WA_NUMBER}?text=${text}`;
+      showFeedback("success", "ধন্যবাদ! বুকিং পাঠানো হচ্ছে। চূড়ান্ত ভর্তির জন্য কলেজে এসে যোগাযোগ করবেন।", waUrl, "সরাসরি হোয়াটসঅ্যাপ লিংক ওপেন করুন", true);
+      window.open(waUrl, "_blank", "noopener,noreferrer");
+    });
+
+    document.getElementById("email-booking-btn").addEventListener("click", () => {
+      const res = validateBooking();
+      if (!res.valid) return showFeedback("error", res.error);
+      const body = `নাম: ${res.name}\nমোবাইল: ${res.phone}\nজিপিএ: ${res.gpa}\nবিভাগ: ${res.department}`;
+      const mailUrl = `mailto:${EMAIL_TO}?subject=${encodeURIComponent("ভর্তি বুকিং")}&body=${encodeURIComponent(body)}`;
+      showFeedback("success", "ইমেইল অ্যাপ খুলছে। সেখানে Send চাপুন।", mailUrl, "সরাসরি ইমেইল অ্যাপ ওপেন করুন", false);
+      window.location.href = mailUrl;
+    });
+  </script>
+</body>
+</html>
